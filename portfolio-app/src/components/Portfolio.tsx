@@ -13,55 +13,11 @@ type Project = {
 
 const projects: Project[] = [
   {
-    id: 1,
-    title: "E-Commerce Platform",
-    description:
-      "Platform e-commerce lengkap dengan fitur keranjang belanja, pembayaran, dan manajemen produk.",
-    tech: ["Next.js", "TypeScript", "PostgreSQL"],
-    demo: "#",
-    github: "#",
-  },
-  {
-    id: 2,
-    title: "Task Management App",
-    description:
-      "Aplikasi manajemen tugas dengan realtime sync, kolaborasi tim, dan notifikasi.",
-    tech: ["React", "Node.js", "MongoDB"],
-    demo: "#",
-    github: "#",
-  },
-  {
     id: 3,
     title: "Portfolio Website",
     description:
       "Website portofolio pribadi dengan desain minimalis dan performa tinggi.",
     tech: ["Next.js", "Tailwind CSS", "TypeScript"],
-    demo: "#",
-    github: "#",
-  },
-  {
-    id: 4,
-    title: "Recipe Finder App",
-    description:
-      "Aplikasi pencarian resep masakan dengan filtering bahan dan waktu memasak.",
-    tech: ["React", "API Integration"],
-    demo: "#",
-    github: "#",
-  },
-  {
-    id: 5,
-    title: "Weather Dashboard",
-    description: "Dashboard cuaca dengan prediksi 7 hari dan peta interaktif.",
-    tech: ["Vue.js", "OpenWeather API"],
-    demo: "#",
-    github: "#",
-  },
-  {
-    id: 6,
-    title: "Chat Application",
-    description:
-      "Aplikasi chat real-time dengan grup, private chat, dan fitur video call.",
-    tech: ["React", "Firebase", "WebRTC"],
     demo: "#",
     github: "#",
   },

@@ -57,11 +57,12 @@ export default function About() {
                 Perjalanan Karier
               </h3>
               <p className="text-sm leading-relaxed text-white/80">
-                Saya adalah Full-Stack Developer dengan ketertarikan pada
-                pengembangan web dan performa. Perjalanan saya dimulai dari rasa
-                ingin tahu tentang bagaimana website bekerja, hingga kini membantu
-                tim membangun produk digital yang sederhana, cepat, dan mudah
-                dipelihara untuk berbagai klien.
+                Saya adalah Full-Stack Developer yang sedang mengasah kemampuan
+                melalui pendidikan formal dan praktikum. Perjalanan saya dimulai
+                dari Produksi Film di SMKN 4 Garut (2021 — 2024), lalu melanjutkan
+                ke S1 Sistem Informasi di Institut Teknologi Garut (2024 — Sekarang),
+                sekaligus mengikuti Coding Camp 2026 powered by DBS Foundation &
+                Dicoding untuk menguasai pengembangan web modern.
               </p>
             </div>
 

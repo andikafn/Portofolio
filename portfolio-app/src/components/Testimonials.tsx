@@ -4,25 +4,11 @@ import { useState } from "react";
 
 const testimonials = [
   {
-    id: 1,
-    name: "Andi Wijaya",
-    role: "Product Manager — TechCorp",
+    id: 0,
+    name: "None",
+    role: "",
     content:
-      "Bekerja dengan Andika adalah pengalaman yang luar biasa. Kualitas kode dan kecepatan pengembangan melebihi ekspektasi kami.",
-  },
-  {
-    id: 2,
-    name: "Siti Rahayu",
-    role: "Founder — StartUpKita",
-    content:
-      "Saya sangat puas dengan hasil kerja Andika. Website yang kami bangun bersama meningkatkan konversi pengguna hingga 40%.",
-  },
-  {
-    id: 3,
-    name: "Budi Santoso",
-    role: "CTO — InovasiDigital",
-    content:
-      "Andika adalah pengembang yang sangat berdedikasi dan memiliki pemahaman yang mendalam tentang teknologi web. Sangat direkomendasikan!",
+      "Belum ada testimonial yang tersedia.",
   },
 ];
 
@@ -62,10 +48,12 @@ export default function Testimonials() {
              &ldquo;{t.content}&rdquo;
            </blockquote>
 
-           <div className="mt-8" data-gsap-card>
-             <p className="font-medium text-white">{t.name}</p>
-             <p className="text-sm text-white/55">{t.role}</p>
-           </div>
+<div className="mt-8" data-gsap-card>
+  <p className="font-medium text-white">{t.name}</p>
+  {t.role && (
+    <p className="text-sm text-white/55">{t.role}</p>
+  )}
+</div>
 
           <div className="mt-12 flex items-center justify-between border-t border-[#1e3a5f] pt-6">
             <button

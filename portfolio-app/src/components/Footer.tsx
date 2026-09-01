@@ -40,8 +40,6 @@ const socialLinks = [
   },
 ];
 
-const cvLink = "cv.pdf";
-
 export default function Footer() {
   return (
     <footer className="maroon-gradient relative overflow-hidden border-t border-[#0a1d3a] py-12">
@@ -64,28 +62,7 @@ export default function Footer() {
                 {link.icon}
               </a>
             ))}
-          </div>
-
-          <a
-            href={cvLink}
-            download
-            className="inline-flex items-center gap-2 border border-[#1e3a5f] px-4 py-2 text-sm text-white transition-all hover:bg-white hover:text-[#071326]"
-          >
-            <svg
-              className="h-4 w-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M12 12l-5 5 5 5 5-5M12 12V3"
-              />
-            </svg>
-            Download CV
-          </a>
+           </div>
         </div>
       </div>
     </footer>

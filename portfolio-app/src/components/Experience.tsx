@@ -17,43 +17,33 @@ type Education = {
 
 const experiences: Experience[] = [
   {
-    id: 1,
-    role: "Senior Frontend Developer",
-    company: "PT. Teknologi Maju Abadi",
-    period: "2023 — Sekarang",
+    id: 0,
+    role: "None",
+    company: "",
+    period: "",
     description:
-      "Membangun dan memelihara aplikasi web menggunakan React, Next.js, dan TypeScript.",
-  },
-  {
-    id: 2,
-    role: "Full-Stack Developer",
-    company: "StartUp Inovasi Digital",
-    period: "2021 — 2023",
-    description:
-      "Mengembangkan fitur-fitur aplikasi full-stack dari desain hingga produksi.",
-  },
-  {
-    id: 3,
-    role: "Junior Web Developer",
-    company: "Agensi Kreatif Digital",
-    period: "2020 — 2021",
-    description:
-      "Membantu tim pengembangan dalam projek website client dengan HTML, CSS, dan JavaScript.",
+      "Saat ini belum memiliki pengalaman kerja tetap.",
   },
 ];
 
 const educationList: Education[] = [
   {
     id: 1,
-    degree: "Sarjana Komputer",
-    institution: "Universitas Indonesia",
-    period: "2016 — 2020",
+    degree: "Produksi Film",
+    institution: "SMKN 4 Garut",
+    period: "2021 — 2024",
   },
   {
     id: 2,
-    degree: "Bootcamp Full-Stack Development",
-    institution: "HackerHouse",
-    period: "2020 — 2021",
+    degree: "S1 Sistem Informasi",
+    institution: "Institut Teknologi Garut",
+    period: "2024 — Sekarang",
+  },
+  {
+    id: 3,
+    degree: "Coding Camp 2026",
+    institution: "DBS Foundation & Dicoding",
+    period: "2026 — Sekarang",
   },
 ];
 
@@ -90,16 +80,22 @@ export default function Experience() {
                   data-gsap-card
                   className="border-l border-[#1e3a5f] pl-6"
                 >
-                  <p className="text-xs uppercase tracking-widest text-white/45">
-                    {exp.period}
-                  </p>
+                  {exp.period && (
+                    <p className="text-xs uppercase tracking-widest text-white/45">
+                      {exp.period}
+                    </p>
+                  )}
                   <h4 className="mt-2 font-medium text-white">
                     {exp.role}
                   </h4>
-                  <p className="text-sm text-white/60">{exp.company}</p>
-                  <p className="mt-3 text-sm leading-relaxed text-white/60">
-                    {exp.description}
-                  </p>
+                  {exp.company && (
+                    <p className="text-sm text-white/60">{exp.company}</p>
+                  )}
+                  {exp.description && (
+                    <p className="mt-3 text-sm leading-relaxed text-white/60">
+                      {exp.description}
+                    </p>
+                  )}
                 </div>
               ))}
             </div>
