@@ -29,18 +29,9 @@ export default function About() {
 
       {/* Photo - absolute to section, past padding to touch bottom border */}
       <div className="absolute bottom-[-5rem] left-0 lg:left-20 w-[650px] max-w-full h-full min-h-[500px] lg:w-[800px] hidden lg:block z-0 lg:translate-x-[30%] lg:-translate-y-[9%]">
-        <div className="absolute bottom-[8%] left-[52%] z-10 -translate-x-1/2 transform-gpu text-center">
-          <div className="relative inline-block rounded-2xl bg-black/50 p-6 backdrop-blur-sm sm:p-7">
-            <span className="relative inline-block whitespace-nowrap text-3xl font-extralight tracking-tight text-white">
-              Andika Firmansyah Nugraha
-            </span>
-            <p className="mt-2 text-base text-white/80">Full stack developer</p>
-          </div>
-        </div>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/assets/about-photo.png"
-          alt="Andika Firmansyah Nugraha - potrait"
+          alt="Andika Firmansyah Nugraha - portrait"
           className="w-full h-full object-contain object-bottom"
         />
       </div>
@@ -52,6 +43,14 @@ export default function About() {
 
         <div className="lg:ml-[560px] lg:pl-6">
           <div className="flex flex-col gap-4">
+            {/* Name card - moved above Perjalanan Karir */}
+            <div className="relative inline-block rounded-2xl bg-black/50 p-6 backdrop-blur-sm sm:p-7 whitespace-nowrap">
+              <span className="relative inline-block text-3xl font-extralight tracking-tight text-white">
+                Andika Firmansyah Nugraha
+              </span>
+              <p className="mt-2 text-base text-white/80">Full stack developer</p>
+            </div>
+
             <div className="rounded-2xl bg-black/40 p-6 backdrop-blur-sm sm:p-7" data-gsap-card>
               <h3 className="mb-3 flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-white">
                 <span className="h-2 w-2 rounded-full bg-[#3b82f6]" />
@@ -112,16 +111,6 @@ export default function About() {
               </p>
             </div>
           </div>
-        </div>
-
-        {/* Mobile: photo above content */}
-        <div className="lg:hidden relative h-[350px] mt-8">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/assets/about-photo.png"
-            alt="Andika Firmansyah Nugraha - portrait"
-            className="w-full h-full object-contain object-center"
-          />
         </div>
       </div>
     </section>
