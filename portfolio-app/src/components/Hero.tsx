@@ -47,7 +47,7 @@ export default function Hero() {
             </span>
       </div>
 
-      <div className="absolute bottom-0 left-1/2 z-10 flex -translate-x-1/2 items-end justify-center">
+<div className="absolute bottom-0 left-1/2 z-10 flex -translate-x-1/2 items-end justify-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/assets/hero-photo.png"
@@ -55,7 +55,7 @@ export default function Hero() {
           data-anim="hero-img"
           className="hero-photo object-contain object-bottom drop-shadow-[0_25px_50px_-12px_rgba(3,5,10,0.9)]"
         />
-      </div>
+</div>
 
       <div className="absolute right-[6%] top-[76%] z-20 flex -translate-y-1/2 flex-col gap-1 text-center overflow-hidden">
             <span data-anim="hero-line" className="glitch font-sans text-3xl font-bold uppercase tracking-[0.15em] text-[#f5e8e0] sm:text-4xl md:text-5xl lg:text-6xl" data-text="WEB">

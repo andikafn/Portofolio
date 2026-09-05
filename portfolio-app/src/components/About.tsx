@@ -28,7 +28,7 @@ export default function About() {
       </div>
 
       {/* Photo - absolute to section, past padding to touch bottom border */}
-      <div className="absolute bottom-[-5rem] left-0 lg:left-20 w-[650px] max-w-full h-full min-h-[500px] lg:w-[800px] hidden lg:block z-0 lg:translate-x-[30%] lg:-translate-y-[9%]">
+      <div className="hidden lg:block absolute bottom-0 left-0 lg:left-10 lg:translate-y-[1%] w-full max-w-full h-full min-h-[500px] lg:w-[800px] z-0">
         <img
           src="/assets/about-photo.png"
           alt="Andika Firmansyah Nugraha - portrait"

@@ -43,7 +43,7 @@ const educationList: Education[] = [
     id: 3,
     degree: "Coding Camp 2026",
     institution: "DBS Foundation & Dicoding",
-    period: "2026 — Sekarang",
+    period: "2026 — 2026",
   },
 ];
 

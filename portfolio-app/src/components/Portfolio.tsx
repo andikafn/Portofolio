@@ -21,6 +21,15 @@ const projects: Project[] = [
     demo: "#",
     github: "#",
   },
+  {
+    id: 4,
+    title: "Web Pencatatan Keuangan",
+    description:
+      "Aplikasi web untuk mencatat dan mengelola keuangan pribadi.",
+    tech: ["Next.js", "React 18", "Prisma", "PostgreSQL", "Tailwind CSS", "TypeScript"],
+    demo: "https://pencatatan-keuangan-ancz4q863-neo-0172.vercel.app/",
+    github: "#",
+  },
 ];
 
 export default function Portfolio() {
